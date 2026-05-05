@@ -2,10 +2,14 @@ FROM node:22-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+RUN corepack enable
 
-RUN npm install
+COPY package.json ./
+
+RUN pnpm install
 
 COPY . .
 
 EXPOSE 5173
+
+CMD ["pnpm", "dev", "--host", "0.0.0.0"]
