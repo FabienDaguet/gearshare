@@ -1,0 +1,77 @@
+/**** HEADER ****/
+
+.header {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo-logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: .5rem;
+}
+
+.headerLogo-text {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.headerLogo-text_title {
+  font-size: 1.125rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.headerLogo-text_country {
+  margin-top: -0.25rem;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.navbarBtn {
+  padding: .5rem 1rem;
+  color: #475569;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  transition: all 0.2s ease;
+}
+
+.navbarBtn:hover {
+  background-color: var(--shadow-btn);
+}
+
+.navbarBtn-active {
+  color: #1F7A5A;
+  background-color: #EAF5EF;
+}
+
+.navbar-btnProfil {
+  padding: 0.25rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-btnProfil:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

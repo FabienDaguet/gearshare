@@ -9,7 +9,7 @@ services:
       - ./frontend:/app
       - /app/node_modules
     working_dir: /app
-    command: npm run dev -- --host 0.0.0.0
+    command: pnpm dev --host 0.0.0.0 --force
     depends_on:
       - backend
 
