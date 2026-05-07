@@ -1,5 +1,25 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/Logo.png';
+import type { NavBarLink } from '../../types/NabarTypes';
+
+const navBarLinks: NavBarLink[] = [
+  {
+    route: "/",
+    name: "Home"
+  },
+  {
+    route: "/search",
+    name: "Search"
+  },
+  {
+    route: "/listings/new",
+    name: "Create ad"
+  },
+  {
+    route: "/rental-request",
+    name: "My reservation"
+  }
+]
 
 const Nav = () => {
   return (
@@ -13,10 +33,9 @@ const Nav = () => {
             </div>
           </div>
           <nav className='navbar'>
-              <NavLink to= "/" className={({isActive}) => `navbarBtn ${isActive ? "navbarBtn-active" : ""}`}>Home</NavLink>
-              <NavLink to= "/search" className={({isActive}) => `navbarBtn ${isActive ? "navbarBtn-active" : ""}`}>Search</NavLink>
-              <NavLink to= "/listings/new" className={({isActive}) => `navbarBtn ${isActive ? "navbarBtn-active" : ""}`}>Create ad</NavLink>
-              <NavLink to= "/rental-request" className={({isActive}) => `navbarBtn ${isActive ? "navbarBtn-active" : ""}`}>My reservation</NavLink>
+            {navBarLinks.map(link => 
+              <NavLink key={link.route} to= {link.route} className={({isActive}) => `navbarBtn ${isActive ? "navbarBtn-active" : ""}`}>{link.name}</NavLink>
+            )}
           </nav>   
           <div className='navbar-btnProfil'>
             <NavLink to= "">Profil</NavLink>     
