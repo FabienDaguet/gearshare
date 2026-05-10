@@ -14,30 +14,30 @@
   z-index: 40;
 }
 
-.headerLogo {
+.header-container {
   display: flex;
   align-items: center;
 }
 
-.headerLogo-logo {
+.headerLogo {
   height: 2.5rem;
   width: 2.5rem;
   margin-right: .5rem;
 }
 
-.headerLogo-text {
+.headerText {
   display: flex;
   text-align: left;
   flex-direction: column;
 }
 
-.headerLogo-text_title {
+.headerText_title {
   font-size: 1.125rem;
   font-weight: 900;
   letter-spacing: -0.02em;
 }
 
-.headerLogo-text_country {
+.headerText_country {
   margin-top: -0.25rem;
   color: #64748b;
   font-size: 0.75rem;

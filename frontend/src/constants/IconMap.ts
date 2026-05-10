@@ -1,0 +1,27 @@
+import type {IconName} from "../types/IconTypes"
+
+export const iconMap: Record<IconName, string> = {
+    search: "⌕",
+    pin: "⌖",
+    calendar: "◷",
+    star: "★",
+    plus: "+",
+    menu: "☰",
+    close: "×",
+    filters: "≡",
+    heart: "♥",
+    shield: "✓",
+    message: "✉",
+    package: "▣",
+    camera: "◉",
+    bell: "•",
+    bag: "▤",
+    home: "⌂",
+    wrench: "⚒",
+    tent: "△",
+    bike: "○",
+    snow: "✶",
+    truck: "▰",
+    check: "✓",
+    clock: "◷",
+  };

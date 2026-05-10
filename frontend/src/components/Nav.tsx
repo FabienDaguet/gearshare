@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/Logo.png';
-import type { NavBarLink } from '../../types/NabarTypes';
+import logo from '../assets/images/Logo.png';
+import type { NavBarLink } from '../types/NabarTypes';
 
 const navBarLinks: NavBarLink[] = [
   {
@@ -25,11 +25,11 @@ const Nav = () => {
   return (
     <>
         <header className='header'>
-          <div className='headerLogo'>
-            <img className='headerLogo-logo' src={logo} alt="GearLogo" />
-            <div className='headerLogo-text'>
-              <span className='headerLogo-text_title'>GEARSHARE</span>
-              <span className='headerLogo-text_country'>Canada</span>
+          <div className='header-container'>
+            <img className='headerLogo' src={logo} alt="GearLogo" />
+            <div className='headerText'>
+              <span className='headerText_title'>GEARSHARE</span>
+              <span className='headerText_country'>Canada</span>
             </div>
           </div>
           <nav className='navbar'>

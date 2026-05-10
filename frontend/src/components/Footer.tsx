@@ -1,4 +1,4 @@
-import type { FooterSection } from "../../types/FooterTypes";
+import type { FooterSection } from "../types/FooterTypes";
 
 const footerSections: FooterSection[] = [
   {
